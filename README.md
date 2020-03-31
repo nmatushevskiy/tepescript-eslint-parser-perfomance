@@ -1,6 +1,6 @@
 how to run:
 1) npm i
-2) npm run lint
+2) npm run lint (node lint.js)
 
 The file "lint.js" (which located in the root) is responsible for starting the eslint
 
