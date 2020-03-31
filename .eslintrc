@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    },
+    "sourceType": "module",
+    "project": "./tsconfig.eslint.json"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "env": {
+    "es6": true,
+    "jasmine": true,
+    "jquery": true,
+    "prototypejs": true,
+    "amd": true,
+    "mocha": true,
+    "browser": true,
+    "node": true,
+    "builtin": true,
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
+    "no-cond-assign": "error",
+    "no-console": "error",
+    "no-constant-condition": "error",
+    "no-control-regex": "error",
+    "no-multi-str": "error",
+    "no-return-assign": "error",
+    "no-throw-literal": "error",
+    "no-octal": "error",
+    "no-octal-escape": "error",
+    "no-debugger": "error",
+    "no-inner-declarations": "off",
+    "no-invalid-regexp": "error",
+    "array-callback-return": "error",
+    "block-scoped-var": "error",
+    "guard-for-in": "error",
+    "@typescript-eslint/no-magic-numbers": ["error", {
+      "ignoreArrayIndexes": true
+    }]
+  }
+}
